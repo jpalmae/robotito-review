@@ -1,0 +1,49 @@
+# ---------- Python ----------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+
+# Paquetes y dependencias comunes de Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ---------- Data y Machine Learning ----------
+# Base de datos SQLite
+*.sqlite3
+*.db
+conversations.db
+
+# persistencia de ChromaDB (Vectores RAG)
+src/chroma_db/
+chroma_db/
+
+# ---------- Configuraciones y Secretos ----------
+# Variables de entorno (¡CRÍTICO NO SUBIR!)
+.env
+.env.local
+.env.dev
+.env.prod
+
+# Archivo de configuración generado por la UI (puede contener info sensible o específica del server)
+config/config.json
+
+# ---------- Caché y Logs ----------
+# Streamlit caché
+.streamlit/
+*.log
+logs/
+
+# ---------- SO ----------
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db

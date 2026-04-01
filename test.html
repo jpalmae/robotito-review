@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web Externo - Prueba de Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .demo-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Sitio Web de Pruebas</h1>
+        <p>Integrando el Chatbot RAG de SixManager</p>
+    </header>
+
+    <main>
+        <div class="demo-box">
+            <h2>¡Hola Mundo!</h2>
+            <p>Esta es una página web externa simulada. No tiene nada que ver con Streamlit ni con Python. Es puro HTML
+                estático.</p>
+            <p>Deberías ver un botón de chat flotante en la esquina inferior derecha. Ese botón fue inyectado
+                dinámicamente desde el backend de FastAPI usando Vanilla JS.</p>
+            <p><strong>Abre el chat flotante y hazle una pregunta a tus PDFs.</strong></p>
+        </div>
+    </main>
+
+    <!-- AQUÍ ESTÁ LA MAGIA: EL WIDGET INCRUSTADO -->
+    <!-- Ajusta el localhost al dominio o IP de tu servidor en producción -->
+    <script src="http://localhost:8000/static/widget.js?v=3" data-api-key="rb-6e9a8f2c3d5b4a1e9c8d7f0e" defer></script>
+
+</body>
+
+</html>
